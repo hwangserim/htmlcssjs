@@ -17,7 +17,8 @@
   			<div class="card-body">
   		
   		<ul>
-			<li><a href = "project/exam01_project1">Project 1 </a></li>  
+			<li><a href = "project/exam01_project1">Project 1 </a></li>
+			<li><a href = "project/exam01_project2">Project 2 </a></li> 
 						
   			</ul>
   		
