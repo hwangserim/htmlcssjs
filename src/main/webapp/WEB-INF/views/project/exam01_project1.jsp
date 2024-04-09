@@ -1,87 +1,56 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-	<head>
-	
-		<meta charset="UTF-8">
-		<title>Insert title here</title>
-	
-			<!-- jQuery 외부 라이브러리 설정 -->
-      <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  			
-  			<style>
+<head>
+<meta charset="UTF-8">
+<title>loginform</title>
+<script
+	src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+</head>
 
-  			body {
-  				margin-top: 80px;
-  			
-  			}
-  		
-  	
-  		 div.container {
-  		 		display: flex;
-				flex-direction: row;
-				align-items: center;
-				justify-content: center;
-  		 		background-color:black;
-  		 		color:white;
-
-  		 }
-
-  		 [class *=menu] {
-  		 		padding: 0px 10px;
-  		 		width: 80px;
-  		 		text-align: center;
-  		 }
-  		 
-  		 [class *=menu]:hover {
-  		 		background-color: gray;
-  		 		color: white;
-  		 		cursor: pointer;
- 
-  		 }
-  		 
-  		  .menu1 {
-  		 	background-color: beige;
-  		 	color: black;
-  		 
-  		 
-  		 }
-  		 
-  		 .logo{
-  		 	display:block;
-  		 	margin: 0 auto;	
-  		 	}
-  		 	
-
-  		</style>
-	</head>
-	<body>
-			<div>
-	
-	<img src ="/htmlcssjs/resources/images/photos/logo.jpg" class="logo"/>
-	
-			</div>
-	
+	<!-- 하나의 큰 컨테이너로 묶음 -->
 	<div class="container">
-  			<div class="menu1">
-  			<p>베스트셀러</p>
-  			</div>
-  			
-  			<div class="menu2">
-  			<p>간식</p>
-  			</div>
-  			
-  			<div class="menu3">
-  			<p>사료</p>
-  			</div>
-  			
-  			<div class="menu4">
-  			<p>Q&A</p>
-  			</div>
-  		
+
+	<!-- Margin 5만큼 주고, left와 right를 자동으로 맞춰줌 -->
+	<div class="sign_in mt-5 mx-auto">
+
+ 		<!-- 로그인 창의 전체 넓이 10 -->
+		<div class="w-10">
+			<form action="/user/sign-in" method="post">
+				
+				<div class="flex-column w-50">
+					<h5 style="text-align:center">로그인</h5>
+					<div class="form-group w-75 pt-2 mt-3 d-flex column container-fluid justify-content-center">
+						<label for="userId"></label> 
+						<input type="text" class="form-control me-2 p-2" name="userId" id="userId"
+							placeholder="아이디"/>
+					</div>
+					<div class="form-group w-75 pt-2 mt-3 d-flex column container-fluid justify-content-center">
+						<label for="password"></label> 
+						<input type="password" class="form-control me-2 p-2" name="password" id="password" placeholder="비밀번호"/>
+					</div>
+					<div class="d-flex flex-row-reverse mt-1">
+						<a href="#" class="password_find me-2">아이디/비밀번호 찾기</a>
+					</div>
+
+					<div class="form-group w-75 mx-auto d-flex mb-4 mt-3">
+						<button type="submit" class="btn btn-primary p-2 w-50 container-fluid justify-content-center">로그인</button>
+					</div>
+					<div class="form-group w-75 mx-auto d-flex mb-4 mt-3">
+						<button type="submit" class="btn btn-primary p-2 w-50 container-fluid justify-content-center">회원가입</button>
+					</div>
+			</form>
 
 		</div>
-	</body>
+	</div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
 </html>

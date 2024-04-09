@@ -30,7 +30,13 @@ public class ProjectController {
 	public String exam01_project2() {
 		log.info("exam01_project2() 실행");
 		return "project/exam01_project2";
-		
+
+	}
+	
+	@RequestMapping("/exam01_project3")
+	public String exam01_project3() {
+		log.info("exam01_project3() 실행");
+		return "project/exam01_project3";
 
 	}
 }
