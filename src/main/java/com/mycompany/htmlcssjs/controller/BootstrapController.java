@@ -37,12 +37,4 @@ public class BootstrapController {
 		return "bootstrap/exam03_color";
 
 }
-	
-	@RequestMapping("exam04_spacing")
-	public String exam04Spacing() {
-		log.info("exam04Spacing() 실행");
-		return "bootstrap/exam04_spacing";
-
-}
-
 }

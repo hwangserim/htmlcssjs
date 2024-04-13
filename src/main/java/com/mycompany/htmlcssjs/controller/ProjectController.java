@@ -39,4 +39,11 @@ public class ProjectController {
 		return "project/exam01_project3";
 
 	}
+	
+	@RequestMapping("/exam01_project1_1")
+	public String exam01_project1_1() {
+		log.info("exam01_project1_1() 실행");
+		return "project/exam01_project1_1";
+
+	}
 }

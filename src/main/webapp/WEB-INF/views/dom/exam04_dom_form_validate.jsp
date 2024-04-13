@@ -117,7 +117,7 @@
 				<div class="mb-3">
 					<label for="uid" class ="form-lable">ID</label> 
 					<input type="text" class="form-control" id="uid" name="uid" value="Abc123" />
-					 <span  id="uidSpan"  class="form-text ">알파벳 대소문자, 숫자를 혼용해서 6자 이상 10장 이하</span>
+					 <span  id="uidSpan"  class="form-text">알파벳 대소문자, 숫자를 혼용해서 6자 이상 10장 이하</span>
 				</div>
 
 				<div class="mb-3">
